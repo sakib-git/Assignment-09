@@ -4,17 +4,18 @@ import { NavLink } from 'react-router';
 const Navbar = () => {
   return (
     <div className='bg-base-200'>
-    <div className='max-w-[1440px] flex justify-between items-center  mx-auto p-2'>
-    <div class="flex items-center gap-3">
-      <div class="bg-yellow-400 text-white text-2xl p-3 rounded-xl shadow-md">🧸</div>
+    <div className='max-w-[1440px] flex justify-between items-center  mx-auto p-2 max-md:flex-col max-md:gap-3 max-md:py-5'>
+    <div class="flex  items-center gap-3">
+      <div class="bg-yellow-400  text-white text-2xl p-3 rounded-xl shadow-md">🧸</div>
       <div>
         <h2 class="text-xl font-bold">Toy Market</h2>
         <p class="text-sm text-gray-600">Playful toys • Trusted shop</p>
       </div>
     </div>
-<div className='flex gap-3 items-center font-semibold'>
-  <NavLink to='/'>Home</NavLink>
-  <NavLink to='/profile'>Profile</NavLink>
+
+  <div className='flex gap-3 items-center font-semibold'>
+  <NavLink className={({isActive}) => isActive ? 'underline' : ''} to='/'>Home</NavLink>
+  <NavLink to='/profile'  className={({isActive}) => isActive ? 'underline' : ''}>Profile</NavLink>
 </div>
 
      <div>
@@ -22,6 +23,7 @@ const Navbar = () => {
             LOG IN
           </NavLink>
         </div>
+
 
     </div>
     </div>

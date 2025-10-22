@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const Login = () => {
+const Register = () => {
   return (
-
 <div className='flex justify-center items-center h-full'>
    
     <div className="card bg-base-100 w-full max-w-sm  shadow-2xl">
@@ -14,14 +13,16 @@ const Login = () => {
           <label className="label">Password</label>
           <input type="password" className="input" placeholder="Password" />
           <div><a className="link link-hover">Forgot password?</a></div>
-          <button className="btn btn-neutral mt-4">Login</button>
-               <p className='font-semibold pt-3 text-center '>Dont't Have An Account ? <Link to='/register' className='text-red-600 '>Register</Link></p>
+          <button className="btn btn-neutral mt-4">Register</button>
+          <p className='font-semibold pt-3 text-center'>
+  Already have an account? <Link to='/login' className='text-red-600'>Login</Link>
+</p>
+
         </fieldset>
       </div>
     </div>
 </div>
-
   );
 };
 
-export default Login;
+export default Register;
