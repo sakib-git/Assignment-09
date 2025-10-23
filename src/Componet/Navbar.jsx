@@ -14,9 +14,17 @@ const Navbar = () => {
     </div>
 
   <div className='flex gap-3 items-center font-semibold'>
-  <NavLink className={({isActive}) => isActive ? 'underline' : ''} to='/'>Home</NavLink>
-   <NavLink to='/alltoys'  className={({isActive}) => isActive ? 'underline' : ''}>AllToys</NavLink>
-  <NavLink to='/profile'  className={({isActive}) => isActive ? 'underline' : ''}>Profile</NavLink>
+
+  <NavLink to="/" className={({ isActive }) =>`px-4 py-2 rounded-md font-semibold  ${isActive ? 'bg-blue-600 text-white   ': 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'}`}>
+  Home
+</NavLink>
+  <NavLink to='/alltoys' className={({ isActive }) =>`px-4 py-2 rounded-md font-semibold  ${isActive ? 'bg-blue-600 text-white   ': 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'}`}>
+  AllToys
+</NavLink>
+  <NavLink to='/profile'  className={({ isActive }) =>`px-4 py-2 rounded-md font-semibold  ${isActive ? 'bg-blue-600 text-white   ': 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'}`}>
+  Profile
+</NavLink>
+
  
 </div>
 

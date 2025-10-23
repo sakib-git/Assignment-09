@@ -25,7 +25,13 @@ const Home = () => {
       }
 
   </div>
-  <NavLink to='/alltoys' className='mx-auto font-semibold border'>show all</NavLink>
+<div className="flex justify-center mt-6">
+  <NavLink 
+    to="/alltoys" className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+    Show All
+  </NavLink>
+</div>
+
      </div>
 </div>
     </div>
