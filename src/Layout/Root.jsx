@@ -1,17 +1,29 @@
-import React from 'react';
-import Navbar from '../Componet/Navbar';
+import React, { use } from 'react';
+import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router';
-import Footer from '../Componet/Footer';
+import Footer from '../components/Footer';
+import { ToastContainer } from 'react-toastify';
+import { AuthContext } from '../Provider/AuthProvider';
+import AppLoading from '../components/AppLoading';
 
 const Root = () => {
+  const { appLoading } = use(AuthContext);
+
   return (
-    <div className='flex flex-col h-screen'>
-      <Navbar></Navbar>
-      <div className='flex-1'>
-        <Outlet></Outlet>
-      </div>
-      <Footer></Footer>
-    </div>
+    <>
+      {appLoading ? (
+        <AppLoading></AppLoading>
+      ) : (
+        <div className="flex flex-col h-screen">
+          <Navbar></Navbar>
+          <div className="flex-1">
+            <Outlet></Outlet>
+          </div>
+          <Footer></Footer>
+          <ToastContainer />
+        </div>
+      )}
+    </>
   );
 };
 

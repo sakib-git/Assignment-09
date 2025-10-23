@@ -3,12 +3,11 @@ import { NavLink } from 'react-router';
 
 const CardData = ({product}) => {
   
-  // console.log(product)
   const {toyName,pictureURL,price,rating,availableQuantity, toyId} = product
 
 
   return (
-    <div className="max-w-sm bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden m-3 border border-gray-100">
+    <div className="max-w-sm bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden m-3 border border-gray-100 mx-auto w-full">
       <img
         src={pictureURL}
         alt={toyName}
