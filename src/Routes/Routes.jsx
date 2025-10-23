@@ -5,9 +5,7 @@ import Profile from "../Pages/Profile";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import AllToys from "../Pages/AllToys";
-import CardData from "../Componet/CardData";
-import ProductDetails from "../Componet/ProductDetails";
-
+import Details from "../Pages/Details";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path : '/toyDetails/:toyId',
-        element: <ProductDetails></ProductDetails>,
+        element: <Details></Details>,
+        loader  : () => fetch("/data.json")
  
       },
       {
