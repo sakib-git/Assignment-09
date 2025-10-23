@@ -1,14 +1,32 @@
-import React from 'react';
+
 import Banner from '../Componet/Banner';
 import Slider from '../Componet/Slider';
+import CardData from '../Componet/CardData';
+import { NavLink } from 'react-router';
+import useData from '../Hook/useData';
 
 const Home = () => {
+  const {products} = useData()
+  // console.log(products)
+  const someData = products.slice(0, 8)
+
+  
+ 
   return (
-    <div>
+    <div >
       <Banner></Banner>
 <div className='flex flex-col'>
         <Slider></Slider>
-     <h2> Home page</h2>
+     <div className='max-w-[1440px] mx-auto'>
+      <h1 className='text-7xl font-bold text-center py-5 max-md:text-4xl'>Trending Toys</h1>
+  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto'>
+        {
+        someData.map(product => <CardData key={product.toyId} product={product}></CardData>)
+      }
+
+  </div>
+  <NavLink to='/alltoys' className='mx-auto font-semibold border'>show all</NavLink>
+     </div>
 </div>
     </div>
   );

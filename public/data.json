@@ -8,7 +8,7 @@
     "rating": 4.7,
     "availableQuantity": 75,
     "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/03/31/20/11/lego-1297582_1280.png",
+    "pictureURL": "https://i.ibb.co/Q3BGKRnh/pic-1.png",
     "subCategory": "Building Blocks"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.5,
     "availableQuantity": 120,
     "description": "Race through loops and jumps with this ultimate Hot Wheels track set.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2014/12/16/22/25/toy-car-570214_1280.jpg",
+    "pictureURL": "https://i.ibb.co/wNqrs9d3/pic-2.webp",
     "subCategory": "Vehicles"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.8,
     "availableQuantity": 30,
     "description": "A deluxe Barbie Dreamhouse with furniture, elevator, and lights for creative play.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/11/29/03/53/barbie-1868835_1280.jpg",
+    "pictureURL": "https://i.ibb.co/7JNSXT8h/pic-3.jpg",
     "subCategory": "Dolls"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.6,
     "availableQuantity": 60,
     "description": "Conquer any terrain with this powerful RC monster truck with rechargeable batteries.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/03/31/19/56/monster-truck-1297572_1280.png",
+    "pictureURL": "https://i.ibb.co/zVjjCgNh/pic-4.webp",
     "subCategory": "Remote Control"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.4,
     "availableQuantity": 90,
     "description": "Colorful wooden alphabet blocks to help toddlers learn letters and spelling.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/01/26/03/02/abc-2008811_1280.jpg",
+    "pictureURL": "https://i.ibb.co/W4NNHTcK/pic-5.jpg",
     "subCategory": "Educational"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.9,
     "availableQuantity": 45,
     "description": "Transform and roll out! Optimus Prime action figure with sound effects.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2019/03/20/19/52/robot-4067766_1280.jpg",
+    "pictureURL": "https://i.ibb.co/TpPR850/pic-6.jpgg",
     "subCategory": "Action Figures"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.5,
     "availableQuantity": 55,
     "description": "Meet your favorite ponies with this colorful set including Twilight Sparkle and friends.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2015/03/26/09/54/my-little-pony-690127_1280.jpg",
+    "pictureURL": "https://i.ibb.co/PvCjfyHK/pic-7.jpg",
     "subCategory": "Dolls"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.6,
     "availableQuantity": 100,
     "description": "Magnetic tiles that allow children to create 3D structures easily.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/08/01/10/25/magnets-2562714_1280.jpg",
+    "pictureURL": "https://i.ibb.co/BVKCK3DL/pic-8.webp",
     "subCategory": "Building Blocks"
   },
   {
@@ -104,7 +104,7 @@
     "rating": 4.3,
     "availableQuantity": 200,
     "description": "A super soft teddy bear perfect for cuddling and gifting.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/11/29/06/18/teddy-1869264_1280.jpg",
+    "pictureURL": "https://i.ibb.co/x8DVT304/pic-9.webp",
     "subCategory": "Soft Toys"
   },
   {
@@ -116,7 +116,7 @@
     "rating": 4.2,
     "availableQuantity": 80,
     "description": "Fun and educational puzzle blocks featuring various animals.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/01/06/20/57/puzzle-1950213_1280.jpg",
+    "pictureURL": "https://i.ibb.co/pBkk6FGL/pic-10.webp",
     "subCategory": "Educational"
   },
   {
@@ -128,7 +128,7 @@
     "rating": 4.7,
     "availableQuantity": 40,
     "description": "Fly high with this RC helicopter that offers stable flight and LED lights.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2015/03/26/09/44/helicopter-690105_1280.jpg",
+    "pictureURL": "https://i.ibb.co/zWCFfTGf/pic-11.webp",
     "subCategory": "Remote Control"
   },
   {
@@ -140,21 +140,21 @@
     "rating": 4.8,
     "availableQuantity": 35,
     "description": "A magical castle for Disney princess dolls with lights and sounds.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/01/20/00/30/castle-1993866_1280.jpg",
+    "pictureURL": "https://i.ibb.co/99tRK147/pic-12.jpg",
     "subCategory": "Dolls"
   },
-  {
-    "toyId": 13,
-    "toyName": "Wooden Train Set",
-    "sellerName": "Classic Toys Co.",
-    "sellerEmail": "info@classictoys.com",
-    "price": 29.99,
-    "rating": 4.6,
-    "availableQuantity": 90,
-    "description": "A classic wooden train set with magnetic cars and smooth tracks.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2015/09/02/12/45/train-918592_1280.jpg",
-    "subCategory": "Vehicles"
-  },
+{
+  "toyId": 13,
+  "toyName": "Mini Kids Bicycle",
+  "sellerName": "Fun Wheels Co.",
+  "sellerEmail": "support@funwheels.com",
+  "price": 79.99,
+  "rating": 4.7,
+  "availableQuantity": 50,
+  "description": "A colorful mini bicycle designed for children aged 3-6, with training wheels and a safety handle.",
+  "pictureURL": "https://i.ibb.co/sv5QB91t/pic-13.jpg",
+  "subCategory": "Vehicles"
+},
   {
     "toyId": 14,
     "toyName": "Nerf Elite Blaster Gun",
@@ -164,7 +164,7 @@
     "rating": 4.5,
     "availableQuantity": 75,
     "description": "High-performance Nerf blaster with soft foam darts for safe fun battles.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/07/25/09/17/gun-2530309_1280.jpg",
+    "pictureURL": "https://i.ibb.co/1fVrXMpy/pic-14.jpg",
     "subCategory": "Action Figures"
   },
   {
@@ -176,7 +176,7 @@
     "rating": 4.9,
     "availableQuantity": 300,
     "description": "The classic Rubik’s Cube for endless brain-teasing fun.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2015/02/25/22/17/rubiks-cube-649340_1280.jpg",
+    "pictureURL": "https://i.ibb.co/spFdrd3P/pic-15.jpg",
     "subCategory": "Educational"
   },
   {
@@ -188,7 +188,7 @@
     "rating": 4.4,
     "availableQuantity": 110,
     "description": "Colorful Play-Doh kit to mold, shape, and create fun figures.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/09/02/14/35/play-doh-1635313_1280.jpg",
+    "pictureURL": "https://i.ibb.co/jvY03jCL/pic-6.jpg",
     "subCategory": "Arts & Crafts"
   },
   {
@@ -200,7 +200,7 @@
     "rating": 4.6,
     "availableQuantity": 65,
     "description": "Pretend play kitchen set with utensils, stove, and dishes for roleplay fun.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/11/29/06/15/kitchen-1869259_1280.jpg",
+    "pictureURL": "https://i.ibb.co/sJMpXZ5L/pic-17.jpg",
     "subCategory": "Role Play"
   },
   {
@@ -212,7 +212,7 @@
     "rating": 4.3,
     "availableQuantity": 150,
     "description": "Cute and cuddly elephant plush toy made from premium cotton.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2014/12/20/18/08/elephant-574097_1280.jpg",
+    "pictureURL": "https://i.ibb.co/FLKwCkVx/pic-18.jpg",
     "subCategory": "Soft Toys"
   },
   {
@@ -224,7 +224,7 @@
     "rating": 4.7,
     "availableQuantity": 85,
     "description": "Detailed Spider-Man action figure with web-shooting accessories.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/01/11/11/39/spiderman-1972569_1280.jpg",
+    "pictureURL": "https://i.ibb.co/MD8w8DLZ/pic-19.webp",
     "subCategory": "Action Figures"
   },
   {
@@ -236,7 +236,19 @@
     "rating": 4.8,
     "availableQuantity": 25,
     "description": "A mini drone equipped with a camera for aerial photography and fun flying.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/06/24/10/47/drone-1474226_1280.jpg",
+    "pictureURL": "https://i.ibb.co/Rkd1KRL3/pic-20.webp",
     "subCategory": "Remote Control"
-  }
+  },
+  {
+  "toyId": 21,
+  "toyName": "Baby Ride-On Motorcycle",
+  "sellerName": "TinyRiders",
+  "sellerEmail": "support@tinyriders.com",
+  "price": 39.99,
+  "rating": 4.8,
+  "availableQuantity": 60,
+  "description": "A colorful baby ride-on motorcycle made from safe, non-toxic plastic. Designed for toddlers to enjoy fun rides with stability and comfort.",
+  "pictureURL": "https://i.ibb.co/mV5hjW32/slide-40-removebg-preview.png",
+  "subCategory": "Ride-On Toys"
+}
 ]
