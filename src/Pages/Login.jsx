@@ -1,16 +1,18 @@
-import React, { use, useState } from 'react';
+import React, { use, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from 'kitzo/react';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../Firebase/fireBase.config';
 import { Eye ,EyeOff} from 'lucide-react';
+import { sendPasswordResetEmail } from 'firebase/auth/cordova';
 
 const Login = () => {
   const Googleprovider = new GoogleAuthProvider();
   const [message, setMessage] = useState('');
     const [showpassword, setShowpassword] = useState(false)
   const { signIn, setUser } = use(AuthContext);
+  const emailRef = useRef(null)
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -49,6 +51,14 @@ const Login = () => {
         console.error('Error:', error.message);
       });
   };
+  const handleRestPassword = (e) => {
+    e.preventDefault()
+    const email = emailRef.current.value
+    sendPasswordResetEmail(auth, email)
+    .then(() => {
+   toast.success('Check your email to reset password!')
+    })
+  }
 
   return (
     <div className="flex justify-center items-center h-full">
@@ -57,7 +67,7 @@ const Login = () => {
           <h1 className="font-semibold text-2xl py-4 text-center">Login your account</h1>
           <fieldset className="fieldset">
             <label className="label">Email</label>
-            <input type="email" className="input" name="email" placeholder="Email" />
+            <input type="email" ref={emailRef} className="input" name="email" placeholder="Email" />
             <div  className='relative mt-2'>
                 <label className="label mb-1">Password</label>
               <input type={showpassword ? 'text' : 'password'} name="password" className="input" placeholder="Password" />
@@ -65,8 +75,8 @@ const Login = () => {
                   {showpassword ? <Eye /> :<EyeOff /> }
               </span>
               </div>
-            <div>
-              <a className="link link-hover">Forgot password?</a>
+            <div onClick={handleRestPassword}>
+              <a  className="link link-hover">Forgot password?</a>
             </div>
             <button className="btn btn-neutral mt-4">Login</button>
             <button onClick={handleGoogleLogin} className="btn bg-white text-black border-[#e5e5e5]">
