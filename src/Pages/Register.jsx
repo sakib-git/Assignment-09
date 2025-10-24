@@ -23,6 +23,7 @@ const Register = () => {
     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!passwordPattern.test(password)) {
       setError('Password must be at least 6 characters long and include both uppercase and lowercase letters.');
+      toast.error(setError)
       return;
     }
 
@@ -74,8 +75,8 @@ const Register = () => {
             </span>
             </div>
 
-            <button className="btn btn-neutral mt-4">Register</button>
-            <button onClick={handleGoogleLogin} className="btn bg-white text-black border-[#e5e5e5]">
+            <button className="btn  btn-primary mt-4">Register</button>
+            <button onClick={handleGoogleLogin} className="btn btn-primary bg-white text-black border-[#e5e5e5]">
               <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <g>
                   <path d="m0 0H512V512H0" fill="#fff"></path>

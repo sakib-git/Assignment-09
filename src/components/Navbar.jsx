@@ -50,7 +50,15 @@ const Navbar = () => {
                   <img className="size-full object-cover" src={user.photoURL} alt="User photo" />
                 </div>
 
-                <span className="text-sm opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity dur bg-black/70 rounded-md py-1 px-2 text-white absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2">{user.email}</span>
+                <span className="text-sm opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity dur bg-black/70 rounded-md py-1 px-2 text-white absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2 ">
+                  {user.email}
+                  <span
+                    className="absolute -top-2 left-24 
+                    border-l-8 border-l-transparent 
+                    border-r-8 border-r-transparent 
+                    border-b-8 border-b-black/70"
+                  ></span>
+                </span>
               </div>
               <button onClick={handleLogout} className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600  font-medium text-[12px] outline">
                 Logout
