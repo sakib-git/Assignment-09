@@ -1,7 +1,7 @@
 import React, { use, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
-import { toast } from 'react-toastify';
+import { toast } from 'kitzo/react';
 
 const Login = () => {
   const [message, setMessage] = useState('');
@@ -12,18 +12,25 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    signIn(email, password)
-      .then((result) => {
-        const user = result.user;
-        setUser(user);
-        navigate('/');
-        setMessage('✅ Login Successful!');
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        toast.error(errorCode, errorMessage);
-      });
+
+    toast.promise(
+      signIn(email, password),
+      {
+        loading: 'Logging in',
+        success: (result) => {
+          const user = result.user;
+          setUser(user);
+          navigate('/');
+          return 'Successfully logged in';
+        },
+        error: (error) => {
+          const errorMessage = error.message;
+          toast.error(errorMessage);
+          return error.message;
+        },
+      },
+      { duration: 3000 }
+    );
   };
 
   return (

@@ -1,7 +1,7 @@
 import { updateProfile } from 'firebase/auth';
 import { AuthContext } from '../Provider/AuthProvider';
 import { use, useRef } from 'react';
-import { toast } from 'react-toastify';
+import { toast } from 'kitzo/react';
 
 const Profile = () => {
   const { user } = use(AuthContext);

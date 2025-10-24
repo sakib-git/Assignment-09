@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../components/Footer';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'kitzo/react';
 import { AuthContext } from '../Provider/AuthProvider';
 import AppLoading from '../components/AppLoading';
 
@@ -20,7 +20,7 @@ const Root = () => {
             <Outlet></Outlet>
           </div>
           <Footer></Footer>
-          <ToastContainer />
+          <ToastContainer position='top-right' />
         </div>
       )}
     </>
