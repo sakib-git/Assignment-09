@@ -3,9 +3,10 @@
 3.live Link : https://assignment-09-sage.vercel.app/,
 4.key features : slider, details, profile, login, register, logout,
 5.npm packages :
-    "axios"
-    "firebase"
-    "kitzo"
-    "react"
-    "react-router"
-    "tailwindcss"
+    "axios",
+    "firebase",
+    "kitzo",
+    "react",
+    "react-router",
+    "tailwindcss",
+    "lucide-react"

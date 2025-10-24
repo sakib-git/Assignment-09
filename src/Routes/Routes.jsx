@@ -9,6 +9,7 @@ import Details from '../Pages/Details';
 import AuthProvider from '../Provider/AuthProvider';
 import DetailsProtectedRouter from './DetailsProtectedRouter';
 import ProfileProtectedRoute from './ProfileProtectedRoute';
+import NotFound from '../Pages/NotFound';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>,
       },
+      {
+    path : '/*',
+    element : <NotFound></NotFound>
+  }
     ],
   },
 ]);
