@@ -1,18 +1,17 @@
-import React, { use } from 'react';
+
 import { Link, NavLink, useLoaderData, useParams } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Details = () => {
   const { toyId } = useParams();
   const data = useLoaderData();
-  const { user } = use(AuthContext);
 
   const finds = data.find((d) => d.toyId == toyId);
   const { toyName, pictureURL, price, rating, availableQuantity, sellerName, sellerEmail, description, subCategory } = finds;
 
   return (
     <div>
-      {user ? (
+  
         <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 my-5">
           <img src={pictureURL} alt={toyName} className="w-full h-96 object-cover" />
           <div className="p-8">
@@ -29,10 +28,22 @@ const Details = () => {
               <p className="text-gray-500 text-md">{sellerEmail}</p>
             </div>
           </div>
+        <form  className="grid grid-cols-1 md:grid-cols-2  gap-6 p-8 ">
+            <div className="flex flex-col">
+              <label className="text-gray-600 mb-2">Name</label>
+              <input type="text"  name="name" placeholder="Enter your Name" className="input px-4 py-2 rounded-lg border text-black focus:outline  " />
+            </div>
+             <div className="flex flex-col">
+              <label className="text-gray-600 mb-2">Email</label>
+              <input  type="email" name="email" placeholder="Email" className="input px-4 py-2 rounded-lg border text-black focus:outline  " />
+            </div>
+            
+             <button type='submit' className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600  font-medium text-[12px] outline text-center max-md:w-max">Try Now</button>
+  
+            </form>
         </div>
-      ) : (
-        alert('login')
-      )}
+       
+   
     </div>
   );
 };
