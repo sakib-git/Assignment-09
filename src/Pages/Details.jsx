@@ -10,9 +10,9 @@ const Details = () => {
   const { toyName, pictureURL, price, rating, availableQuantity, sellerName, sellerEmail, description, subCategory } = finds;
 
   return (
-    <div>
+    <div className='max-md:px-3'>
   
-        <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 my-5">
+        <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 my-5 ">
           <img src={pictureURL} alt={toyName} className="w-full h-96 object-cover" />
           <div className="p-8">
             <h2 className="text-3xl font-bold mb-3">{toyName}</h2>

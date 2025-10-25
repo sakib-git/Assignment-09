@@ -9,4 +9,5 @@
     "react",
     "react-router",
     "tailwindcss",
-    "lucide-react"
+    "lucide-react",
+    "Aos"

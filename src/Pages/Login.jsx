@@ -61,7 +61,7 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div className="flex justify-center items-center h-full max-md:px-3">
       <div className="card bg-base-100 w-full max-w-sm  shadow-2xl">
         <form onSubmit={handleLogin} className="card-body">
           <h1 className="font-semibold text-2xl py-4 text-center">Login your account</h1>
@@ -72,7 +72,7 @@ const Login = () => {
                 <label className="label mb-1">Password</label>
               <input type={showpassword ? 'text' : 'password'} name="password" className="input" placeholder="Password" />
               <span onClick={() => setShowpassword(!showpassword)} className='absolute right-7 top-7'>
-                  {showpassword ? <Eye /> :<EyeOff /> }
+                  {showpassword ? <Eye width={18}  /> :<EyeOff width={18}  /> }
               </span>
               </div>
             <div onClick={handleRestPassword}>

@@ -53,7 +53,7 @@ const Navbar = () => {
                 <span className="text-sm opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity dur bg-black/70 rounded-md py-1 px-2 text-white absolute top-[calc(100%+10px)] left-1/2 -translate-x-1/2 ">
                   {user.email}
                   <span
-                    className="absolute -top-2 left-24 
+                    className="absolute -top-2 left-1/2 
                     border-l-8 border-l-transparent 
                     border-r-8 border-r-transparent 
                     border-b-8 border-b-black/70"
