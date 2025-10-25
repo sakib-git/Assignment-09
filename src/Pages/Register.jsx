@@ -57,6 +57,7 @@ const Register = () => {
   };
   return (
     <div className="flex justify-center items-center h-full max-md:px-3">
+      <title>Toy_Market_Register</title>
       <div className="card bg-base-100 w-full max-w-sm  shadow-2xl">
         <form onSubmit={handleRegister} className="card-body">
           <h1 className="font-semibold text-2xl py-4 text-center">Register your account</h1>

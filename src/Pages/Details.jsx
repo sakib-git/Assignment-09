@@ -11,7 +11,7 @@ const Details = () => {
 
   return (
     <div className='max-md:px-3'>
-  
+      <title>Toy_Market_Details</title>
         <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 my-5 ">
           <img src={pictureURL} alt={toyName} className="w-full h-96 object-cover" />
           <div className="p-8">

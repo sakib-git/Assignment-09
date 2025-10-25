@@ -21,6 +21,7 @@ const Profile = () => {
 
   return (
     <div className="max-w-[1200px] mx-auto mt-10 p-6">
+      <title>Toy_Market_Profile</title>
       <div className="bg-blue-400 rounded-3xl shadow-xl grid md:grid-cols-3 gap-8 p-8 text-white">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="size-32 mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">

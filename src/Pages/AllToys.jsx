@@ -19,6 +19,7 @@ const AllToys = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto  max-md:px-3">
+      <title>Toy_Market_AllToys</title>
       <div className="py-8 text-center" data-aos="fade-up">
         <h2 className="text-2xl md:text-4xl font-bold text-blue-700">Our All Toys</h2>
         <p className="text-[#627382] max-w-2xl mx-auto">
