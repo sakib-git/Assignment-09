@@ -9,7 +9,6 @@ import { sendPasswordResetEmail } from 'firebase/auth/cordova';
 
 const Login = () => {
   const Googleprovider = new GoogleAuthProvider();
-  const [message, setMessage] = useState('');
     const [showpassword, setShowpassword] = useState(false)
   const { signIn, setUser } = use(AuthContext);
   const emailRef = useRef(null)
@@ -54,10 +53,19 @@ const Login = () => {
   const handleRestPassword = (e) => {
     e.preventDefault()
     const email = emailRef.current.value
+
+      if (!email) {
+      toast.error("Please enter your email first!");
+      return;
+    }
     sendPasswordResetEmail(auth, email)
     .then(() => {
    toast.success('Check your email to reset password!')
+    setTimeout(() => {
+        window.open("https://mail.google.com", "_blank");
+      }, 1500); 
     })
+   
   }
 
   return (
@@ -91,9 +99,8 @@ const Login = () => {
               </svg>
               Login with Google
             </button>
-            {message && <p className="text-green-500 font-semibold">{message}</p>}
             <p className="font-semibold pt-3 text-center ">
-              Dont't Have An Account ?{' '}
+              Dont't Have An Account ?
               <Link to="/register" className="text-red-600 ">
                 Register
               </Link>

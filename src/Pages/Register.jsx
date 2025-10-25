@@ -92,7 +92,7 @@ const Register = () => {
             </button>
             {error && <p className="text-red-600">{error}</p>}
             <p className="font-semibold pt-3 text-center">
-              Already have an account?{' '}
+              Already have an account?
               <Link to="/login" className="text-red-600">
                 Login
               </Link>

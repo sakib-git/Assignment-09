@@ -1,6 +1,6 @@
 import { updateProfile } from 'firebase/auth';
 import { AuthContext } from '../Provider/AuthProvider';
-import { use, useRef } from 'react';
+import { use } from 'react';
 import { toast } from 'kitzo/react';
 
 const Profile = () => {
