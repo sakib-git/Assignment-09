@@ -1,11 +1,10 @@
+# Assignment-09_category_Orchid
 
- Assignment-09_category_Orchid
-
-1.project Name : Toy Market,
-2. purpose : baby ta toy kinte pare,
-3.live Link : https://assignment-09-sage.vercel.app/,
-4.key features : slider, details, profile, login, register, logout,
-5.npm packages :
+* project Name : Toy Market,
+* purpose : baby ra toy kinte pare,
+* live Link : https://assignment-09-sage.vercel.app/,
+* key features : slider, details, profile, login, register, logout,
+* npm packages :
     "axios",
     "firebase",
     "kitzo",
